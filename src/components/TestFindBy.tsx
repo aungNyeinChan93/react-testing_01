@@ -8,6 +8,7 @@ const TestFindBy = () => {
 
         <input type="text" name="name" id="" placeholder="Enter Name" />
         <input type="text" name="email" id="" placeholder="Enter Email" />
+        <input type="text" name="email" id="" placeholder="Enter Email" />
       </section>
     </React.Fragment>
   );

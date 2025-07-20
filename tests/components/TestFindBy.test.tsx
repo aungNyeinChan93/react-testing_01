@@ -10,8 +10,8 @@ describe("TestFindBy", () => {
 
   test("find inputs by findAllBy", async () => {
     render(<TestFindBy />);
-    const inputs = await screen.findAllByPlaceholderText(/Enter/i);
-    expect(inputs).toHaveLength(2);
+    const inputs = await screen.findAllByRole("textbox");
+    expect(inputs).toHaveLength(3);
     inputs.forEach((input) => {
       expect(input).toBeInTheDocument();
     });
